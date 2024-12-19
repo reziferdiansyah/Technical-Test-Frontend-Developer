@@ -39,14 +39,14 @@ onMounted(() => {
       id: 'polygon-fill-layer',
       type: 'fill',
       source: 'polygon-source',
-      paint: { 'fill-color': '#FF0000', 'fill-opacity': 0.5 },
+      paint: { 'fill-color': '#9d00ff', 'fill-opacity': 0.5 },
     });
 
     map.addLayer({
       id: 'polygon-outline-layer',
       type: 'line',
       source: 'polygon-source',
-      paint: { 'line-color': '#000000', 'line-width': 1 },
+      paint: { 'line-color': '#FF0000', 'line-width': 1 },
     });
 
     //  Circle Layer
