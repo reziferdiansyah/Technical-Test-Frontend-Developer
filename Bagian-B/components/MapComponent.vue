@@ -11,7 +11,7 @@ import logoCirclegeo from '../public/images/logo-circlegeo.png'
 // Data GeoJSON
 const geojsonData = geoJsonDatas
 
-const customMarkerIcon =  '../public/images/logo-circlegeo.png' // Ganti dengan path logo circlegeo.
+const customMarkerIcon =  logoCirclegeo 
 
 onMounted(() => {
   // Inisialisasi Map
@@ -94,7 +94,7 @@ function createCustomMarker() {
   const marker = document.createElement('div');
   marker.style.width = '30px';
   marker.style.height = '30px';
-  // marker.style.backgroundImage = ⁠ url(${customMarkerIcon}) ⁠;
+  marker.style.backgroundImage = `url(${customMarkerIcon})`; 
   marker.style.backgroundSize = 'contain';
   return marker;
 }
